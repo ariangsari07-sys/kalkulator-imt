@@ -4,6 +4,11 @@
   let hasil = "";
 
   function hitungIMT() {
+    if (!bb || !tb_imt) {
+      hasil = "Mohon isi BB dan TB";
+      return;
+    }
+
     const imt = bb / (tb_imt * tb_imt);
     let kategori = "";
 
@@ -16,8 +21,17 @@
   }
 
   function hitungBBIdeal() {
+    if (!tb_bb) {
+      hasil = "Mohon isi TB";
+      return;
+    }
+
     const bbIdeal = (tb_bb - 100) * 0.9;
     hasil = `BB Ideal: ${bbIdeal.toFixed(1)} kg`;
+  }
+
+  $: if (pilihan) {
+    hasil = "";
   }
 </script>
 
@@ -47,7 +61,7 @@
 <p id="hasil">{hasil}</p>
 
 <style>
-  body {
+  :global(body) {
     font-family: Arial, sans-serif;
     background: #f5f7fa;
     padding: 40px;
