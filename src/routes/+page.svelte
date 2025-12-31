@@ -51,8 +51,6 @@
     font-family: Arial, sans-serif;
     background: #f5f7fa;
     padding: 40px;
-    display: block;
-    margin: auto;
   }
 
   h1 {
