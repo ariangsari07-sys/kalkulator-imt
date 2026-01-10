@@ -92,7 +92,7 @@
   }
 
   input {
-    width: 100%;
+    width: 9gi0%;
     padding: 10px;
     margin-bottom: 12px;
     border-radius: 6px;
