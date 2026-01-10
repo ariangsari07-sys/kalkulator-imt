@@ -48,7 +48,7 @@
     <input type="number" bind:value={bb} placeholder="Berat badan (kg)" />
     <input type="number" bind:value={tb_imt} placeholder="Tinggi badan (meter)" />
     <button on:click={hitungIMT}>Hitung IMT</button>
-    <small>*Untuk tinggi badan gunakan satuan meter (Contoh : 1.60)</small>
+    <strong><small>*Untuk tinggi badan gunakan satuan meter (Contoh : 1.60)</small></strong>
   </div>
 {/if}
 
@@ -92,7 +92,7 @@
   }
 
   input {
-    width: 90%;
+    width: 80%;
     padding: 10px;
     margin-bottom: 12px;
     border-radius: 6px;
