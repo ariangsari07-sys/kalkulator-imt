@@ -46,9 +46,9 @@
 {#if pilihan === "imt"}
   <div>
     <input type="number" bind:value={bb} placeholder="Berat badan (kg)" />
-    <input type="number" bind:value={tb_imt} placeholder="Tinggi badan (meter)" />
+    <input type="number" bind:value={tb_imt} placeholder="Tinggi badan (m)" />
     <button on:click={hitungIMT}>Hitung IMT</button>
-    <strong><small>*Untuk tinggi badan gunakan satuan meter (Contoh : 1.60)</small></strong>
+    <p class="catatan">*Untuk tinggi badan gunakan satuan meter (Contoh: 1.60)</p>
   </div>
 {/if}
 
@@ -83,21 +83,29 @@
   }
 
   div {
-    background: white;
-    max-width: 320px;
-    margin: 20px auto;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  }
+  background: white;
+  max-width: 320px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: left;
+}
 
   input {
-    width: 80%;
-    padding: 10px;
-    margin-bottom: 12px;
-    border-radius: 6px;
-    border: none;
-  }
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+ .catatan {
+  font-size: 12px;
+  color: #555;
+  margin-top: 6px;
+}
 
   button {
     width: 100%;
