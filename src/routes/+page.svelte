@@ -35,10 +35,6 @@
   }
 </script>
 
-<h1 style="color:red; font-size:40px;">
-  TES DEPLOY BERHASIL 🔥🔥🔥
-</h1>
-
 <h1>Perhitungan IMT dan BB Ideal</h1>
 
 <select bind:value={pilihan}>
