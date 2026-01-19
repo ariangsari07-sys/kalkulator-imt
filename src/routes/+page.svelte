@@ -1,5 +1,4 @@
 <script>
-  <h1 style="color:red">TES MUNCUL APA NGGAK</h1>
   let pilihan = "";
   let bb, tb_imt, tb_bb;
   let hasil = "";
